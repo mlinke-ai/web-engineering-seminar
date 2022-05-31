@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Complex Demo</title>
+    <style></style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="complex_demo.js" defer></script>
+</head>
+
+<body>
+    <label for="x_group_select">
+        X Group:
+        <select name="x_group_select" id="x_group_select">
+            <option value="none" selected>None</option>
+            <option value="pclass">Class</option>
+            <option value="embarked">Embarked</option>
+            <option value="parch">Number of Parents / Children</option>
+            <option value="sibsp">Number of Siblings / Spouses</option>
+            <option value="sex">Sex</option>
+            <option value="survived">Survival</option>
+        </select>
+    </label>
+    <label for="y_group_select">
+        Y Group:
+        <select name="y_group_select" id="y_group_select">
+            <option value="none" selected>None</option>
+            <option value="pclass">Class</option>
+            <option value="embarked">Embarked</option>
+            <option value="parch">Number of Parents / Children</option>
+            <option value="sibsp">Number of Siblings / Spouses</option>
+            <option value="sex">Sex</option>
+            <option value="survived">Survival</option>
+        </select>
+    </label>
+    <label for="color_select">
+        Color:
+        <select name="color_select" id="color_select">
+            <option value="none" selected>None</option>
+            <option value="age">Age</option>
+            <option value="pclass">Class</option>
+            <option value="embarked">Embarked</option>
+            <option value="fare">Fare</option>
+            <option value="parch">Number of Parents / Children</option>
+            <option value="sibsp">Number of Siblings / Spouses</option>
+            <option value="sex">Sex</option>
+            <option value="survived">Survival</option>
+        </select>
+    </label>
+    <label for="size_select">
+        Size:
+        <select name="size_select" id="size_select">
+            <option value="none" selected>None</option>
+            <option value="age">Age</option>
+            <option value="fare">Fare</option>
+        </select>
+    </label>
+    <label for="histogram_select">
+        Histogram:
+        <select name="histogram_select" id="histogram_select">
+            <option value="none" selected>None</option>
+            <option value="age">Age</option>
+            <option value="fare">Fare</option>
+        </select>
+    </label>
+    <div id="canvas"></div>
+    <div id="histogram"></div>
+</body>
+
+</html>
